@@ -29,10 +29,11 @@
 
 ### 1. Clone & Install
 
-```bash
+
 git clone https://github.com/vijaykrishna483-cms/PricePilot.git
 cd PricePilot
-npm install
+
+
 
 2. Environment Variables
 Create a .env file in the root directory:
