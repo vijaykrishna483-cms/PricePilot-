@@ -32,7 +32,6 @@ bash
 Copy
 Edit
 git clone https://github.com/vijaykrishna483-cms/PricePilot-
-cd pricewise
 npm install
 2. Environment Variables
 Create a .env file in the root:
@@ -40,14 +39,11 @@ Create a .env file in the root:
 env
 Copy
 Edit
-# SCRAPER
 BRIGHT_DATA_USERNAME=
 BRIGHT_DATA_PASSWORD=
 
-# DATABASE
 MONGODB_URI=
 
-# EMAIL
 EMAIL_USER=
 EMAIL_PASS=
 3. Run Dev Server
