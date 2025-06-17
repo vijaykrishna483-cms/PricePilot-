@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="https://youtu.be/lh9XVGv6BHs?si=BquPyhI_o2f8jHqV" target="_blank">
-      <img src="https://github.com/adrianhajdin/pricewise/assets/151519281/315377f2-0307-4ac2-87e0-55e053ca094b" alt="Project Banner">
+      <img src="https://github.com/adrianhajdin/PricePilot/assets/151519281/315377f2-0307-4ac2-87e0-55e053ca094b" alt="Project Banner">
     </a>
   <br />
 
@@ -88,8 +88,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/pricewise.git
-cd pricewise
+git clone https://github.com/adrianhajdin/PricePilot.git
+cd PricePilot
 ```
 
 **Installation**
@@ -242,7 +242,7 @@ export async function generateEmailBody(
       subject = `Welcome to Price Tracking for ${shortenedTitle}`;
       body = `
         <div>
-          <h2>Welcome to PriceWise 🚀</h2>
+          <h2>Welcome to PricePilot 🚀</h2>
           <p>You are now tracking ${product.title}.</p>
           <p>Here's an example of how you'll receive updates:</p>
           <div style="border: 1px solid #ccc; padding: 10px; background-color: #f8f8f8;">

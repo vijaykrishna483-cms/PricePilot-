@@ -81,27 +81,26 @@ export async function generateEmailBody(
 }
 
 const transporter = nodemailer.createTransport({
-  pool: true,
-  service: 'hotmail',
-  port: 2525,
+  host: 'smtp-relay.brevo.com',
+  port: 587,
+  secure: false, // use TLS
   auth: {
-    user: 'javascriptmastery@outlook.com',
-    pass: process.env.EMAIL_PASSWORD,
+    user: '877bb6001@smtp-brevo.com',
+    pass: process.env.BREVO_SMTP_PASSWORD,
   },
-  maxConnections: 1
-})
+});
 
 export const sendEmail = async (emailContent: EmailContent, sendTo: string[]) => {
   const mailOptions = {
-    from: 'javascriptmastery@outlook.com',
+    from: '877bb6001@smtp-brevo.com',
     to: sendTo,
     html: emailContent.body,
     subject: emailContent.subject,
-  }
+  };
 
   transporter.sendMail(mailOptions, (error: any, info: any) => {
-    if(error) return console.log(error);
-    
-    console.log('Email sent: ', info);
-  })
-}
+    if (error) return console.log(error);
+
+    console.log('Email sent:', info);
+  });
+};
