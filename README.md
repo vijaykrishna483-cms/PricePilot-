@@ -29,15 +29,15 @@
 
 ### 1. Clone & Install
 
-
+```bash
 git clone https://github.com/vijaykrishna483-cms/PricePilot.git
 cd PricePilot
 
-
+```
 
 2. Environment Variables
 Create a .env file in the root directory:
-
+```bash
 # Bright Data
 BRIGHT_DATA_USERNAME=
 BRIGHT_DATA_PASSWORD=
@@ -48,11 +48,13 @@ MONGODB_URI=
 # Email (e.g. Outlook or SMTP)
 EMAIL_USER=
 EMAIL_PASS=
-
+```
 3. Run Development Server
 bash
 Copy
 Edit
+```bash
 npm run dev
+```
 Visit: http://localhost:3000
 
